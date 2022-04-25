@@ -1,0 +1,38 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.leftSide {
+    width: 35vw;
+    background-color: red;
+}
+
+.rightSide {
+    width: 65vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.topInfo,
+.middleInfo,
+.bottomInfo  {
+    flex: 1 1 0;
+    padding: 40px;
+}
+
+
+.topInfo,
+.bottomInfo {
+    background-color: lightgrey;
+}
