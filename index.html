@@ -11,8 +11,11 @@
     <div class="leftSide">
 
     </div>
+
     <div class="rightSide">
+
         <div class="topInfo">
+            
             <p> This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
             </p>
@@ -22,44 +25,56 @@
             <p>
                 You <i>know</i> you want to.
             </p>
+
         </div>
+
         <div class="middleInfo">
-            <form action="#" method="post">
-                <p>Let's do this!</p>
-                <div class="form">
+
+            <p>Let's do this!</p> 
+
+            <form id= "myform" action="#" method="post">
+
+                <div class="inputWrapper">
                     <label for="first_name">FIRST NAME</label>
                     <input type="text" name="first_name" id="first_name">
+                </div>
 
+                <div class="inputWrapper">
                     <label for="last_name">LAST NAME</label>
                     <input type="text" name="last_name" id="last_name">
                 </div>
 
-                <div class="form"> 
+                <div class="inputWrapper">
                     <label for="email">EMAIL</label>
                     <input type="email" name="email" id="email">
+                </div>
 
+                <div class="inputWrapper">
                     <label for="phone_number">PHONE NUMBER</label>
                     <input type="tel" id="phone_number" name="phone_number">
-                    
                 </div>
-                <div class="form">
+
+                <div class="inputWrapper">
                     <label for="password">PASSWORD</label>
                     <input type="password" name="password" id="password">
+                </div>
 
+                <div class="inputWrapper">
                     <label for="password_check">CONFIRM PASSWORD</label>
                     <input type="password" name="password_check" id="password_check">
-
                 </div>
+
             </form>
         </div>
+
         <div class="bottomInfo">
-            <button>Create Account</button>
-            <p>Alright have an account? <a href="#">Log in</a> </p>
+            <input type="submit" form="myform" value="Create Account"> 
+            <p>Already have an account? <a href="#">Log in</a> </p>
         </div>
 
     </div>
-    
 
     <script src="./script.js"></script>
+    
 </body>
 </html>

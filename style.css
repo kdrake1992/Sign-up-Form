@@ -1,10 +1,16 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 
+:root {
+    --big-text: 18px;
+    --medium-text: 14px;
+    --small-text: 12px;
+    --gap: 20px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Radio Canada', sans-serif;
 }
 
 body {
@@ -26,13 +32,63 @@ body {
 
 .topInfo,
 .middleInfo,
-.bottomInfo  {
+.bottomInfo {
     flex: 1 1 0;
     padding: 40px;
 }
 
-
 .topInfo,
 .bottomInfo {
     background-color: lightgrey;
+    font-size: var(--big-text);
+}
+
+.topInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap)
+}
+
+.middleInfo p {
+    font-size: var(--big-text);
+}
+
+.bottomInfo {
+    font-size: var(--medium-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap)
+}
+
+form {
+    margin: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+
+display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2em 2em 2em;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input, label{
+    width: 200px;
+}
+
+label {
+    font-size: var(--small-text);
+}
+
+input[type="submit"] {
+    background-color: #596D48;
+    color: white;
+
+    padding: 10px;
+    border-radius: 7px;
 }
