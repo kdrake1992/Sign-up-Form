@@ -64,7 +64,7 @@ body {
 .topInfo,
 .middleInfo,
 .bottomInfo {
-    flex: 1 1 0;
+    flex: 1;
     padding: 25px;
 }
 
@@ -168,10 +168,15 @@ input[type="submit"] {
     }
 
     .rightSide {
-        height: 100%;
         width: 100%;
     }
 
+    .topInfo,
+    .middleInfo,
+    .bottomInfo {
+        flex: 1;
+        padding: 25px;
+    }
 
     form {
         margin: 0;
