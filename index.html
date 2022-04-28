@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+    <!-- The left side of signup page. Includes a photo with a logo.
+    The logo has a transparent background. -->
     <div class="leftSide">
         <div class="transparent"></div>
         <div class="left-logo">
@@ -21,7 +24,8 @@
     </div>
 
     <div class="rightSide">
-
+        <!-- The right side is split into 3 sides/
+        The top being text. The middle being the form. The bottom having a submit. -->
         <div class="topInfo">
             
             <p> This is not a real online service! You know you need something
@@ -39,7 +43,9 @@
         <div class="middleInfo">
 
             <p>Let's do this!</p>
-            <p id="empty"> </p>
+
+            <!-- Form include first name, last name, email, phone, password and password confirmation.
+            All but the phone number is required. -->
 
             <form id= "myform" action="#" method="post">
 
@@ -78,6 +84,7 @@
             </form>
         </div>
 
+        <!-- Submit button connected to the form -->
         <div class="bottomInfo">
             <input type="submit" form="myform" value="Create Account"> 
             <p>Already have an account? <a href="#">Log in</a> </p>
