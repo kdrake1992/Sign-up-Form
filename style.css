@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 
 :root {
-    --big-text: 18px;
-    --medium-text: 14px;
+    --big-text: 20px;
+    --medium-text: 16px;
     --small-text: 12px;
     --gap: 20px;
 }
@@ -18,8 +18,39 @@ body {
 }
 
 .leftSide {
+    position: relative;
+    height: 100vh;
     width: 35vw;
-    background-color: red;
+    background-image: url(./assets/camille-san-vicente-Y-zGxUCtrxw-unsplash.jpg);
+    background-size: cover;
+    background-position: -50px;
+    background-repeat: no-repeat;
+}
+
+.left-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 30vh;
+
+    color: white;
+    font-size: 70px;
+    
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.left-logo img {
+    width: 100px;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: var(--small-text);
+
 }
 
 .rightSide {
@@ -34,7 +65,7 @@ body {
 .middleInfo,
 .bottomInfo {
     flex: 1 1 0;
-    padding: 40px;
+    padding: 25px;
 }
 
 .topInfo,
@@ -78,17 +109,32 @@ display: grid;
 }
 
 input, label{
-    width: 200px;
+    width: 225px;
+}
+
+input {
+    border: 2px solid rgba(0, 0, 0, 0.192);
+    border-radius: 5px;
 }
 
 label {
     font-size: var(--small-text);
 }
 
+input:not(:placeholder-shown):invalid {
+    background-color: rgb(243, 177, 177);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
 input[type="submit"] {
-    background-color: #596D48;
+    background-color: #60992f;
     color: white;
 
+    width: 200px;
     padding: 10px;
     border-radius: 7px;
 }

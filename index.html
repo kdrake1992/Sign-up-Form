@@ -9,7 +9,15 @@
 </head>
 <body>
     <div class="leftSide">
+        <div class="transparent"></div>
+        <div class="left-logo">
+            <img src="./assets/odin-lined.png" alt="">
+            <p>ODIN</p>
+        </div>
 
+        <div class="photo-credit">
+            <p>Photo by Camille San Vicente on Unsplash</p>
+        </div>
     </div>
 
     <div class="rightSide">
@@ -30,38 +38,41 @@
 
         <div class="middleInfo">
 
-            <p>Let's do this!</p> 
+            <p>Let's do this!</p>
+            <p id="empty"> </p>
 
             <form id= "myform" action="#" method="post">
 
                 <div class="inputWrapper">
-                    <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name">
+                    <label for="first_name">*FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="John" required >
                 </div>
 
                 <div class="inputWrapper">
-                    <label for="last_name">LAST NAME</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <label for="last_name">*LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Smith" required>
                 </div>
 
                 <div class="inputWrapper">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">*EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="abc@example.com" required>
                 </div>
 
                 <div class="inputWrapper">
                     <label for="phone_number">PHONE NUMBER</label>
-                    <input type="tel" id="phone_number" name="phone_number">
+                    <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                    placeholder="012-2345-6789">
                 </div>
 
                 <div class="inputWrapper">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <label for="password">*PASSWORD</label>
+                    <input type="password" name="password" id="password" minlength="6" onChange="onChange()" required>
+                    <p></p>
                 </div>
 
                 <div class="inputWrapper">
-                    <label for="password_check">CONFIRM PASSWORD</label>
-                    <input type="password" name="password_check" id="password_check">
+                    <label for="password_check">*CONFIRM PASSWORD</label>
+                    <input type="password" name="password_check" id="password_check" onChange="onChange()" required>
                 </div>
 
             </form>
