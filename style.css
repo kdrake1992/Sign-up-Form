@@ -74,6 +74,12 @@ body {
     font-size: var(--big-text);
 }
 
+.middleInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .topInfo {
     display: flex;
     flex-direction: column;
