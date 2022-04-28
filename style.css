@@ -168,6 +168,7 @@ input[type="submit"] {
     }
 
     .rightSide {
+        height: 100%;
         width: 100%;
     }
 
