@@ -95,6 +95,8 @@ body {
     font-size: var(--medium-text);
     display: flex;
     flex-direction: column;
+
+    padding-top: 50px;
     gap: var(--gap)
 }
 
@@ -143,4 +145,50 @@ input[type="submit"] {
     width: 200px;
     padding: 10px;
     border-radius: 7px;
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .leftSide {
+        height: 45vh;
+        width: 100%;
+    }
+
+    .left-logo {
+        top: 15vh;
+        font-size: 50px;
+    }
+
+    .left-logo img {
+        width: 80px;
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+
+
+    form {
+        margin: 0;
+        padding-top: 20px;
+        box-sizing: border-box;
+
+        display: grid;
+        grid-gap: var(--gap);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2em 2em 2em;
+    }
+
+    input, label{
+        width: 75%
+    }
+
+    .bottomInfo {
+        padding-top: 60px;
+    }
+
 }
